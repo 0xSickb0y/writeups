@@ -39,9 +39,9 @@ Since nothing was found on the web server initially, a UDP scan was conducted on
 
 The `snmp-check` tool was used to gather more information about the service and the machine itself. From the output, it was discovered that the application was running a [DaloRADIUS](https://github.com/lirantal/daloradius) application.
 
-From https://github![1](https://github.com/user-attachments/assets/910a3af0-924e-4e49-ac08-8e4004a9bdca)
+![1](https://github.com/user-attachments/assets/e4f6f1b0-f4da-4422-bc5d-c20773d972c7)
 
-.com/lirantal/daloradius :
+From https://github.com/lirantal/daloradius :
 
 _"daloRADIUS is an advanced RADIUS web management application for managing hotspots and general-purpose ISP deployments. It features user management, graphical reporting, accounting, a billing engine, and integrates with OpenStreetMap for geolocation. The system is based on FreeRADIUS with which it shares access to the backend database._
 
