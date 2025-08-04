@@ -22,6 +22,7 @@ Each write-up contains:
         - [Sequel](https://github.com/0xSickb0y/writeups/tree/en-us/HackTheBox/Very%20Easy/Sequel)
 
     - [Easy](https://github.com/0xSickb0y/writeups/tree/en-us/HackTheBox/Easy)
+        - [Planning](https://github.com/0xSickb0y/writeups/tree/en-us/HackTheBox/Easy/Planning)
         - [UnderPass](https://github.com/0xSickb0y/writeups/tree/en-us/HackTheBox/Easy/UnderPass)
 
 - [TryHackMe](https://github.com/0xSickb0y/writeups/tree/en-us/TryHackMe)
