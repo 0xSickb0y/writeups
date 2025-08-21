@@ -14,6 +14,7 @@ Each write-up contains:
 - [HackTheBox](https://github.com/0xSickb0y/writeups/tree/en-us/HackTheBox)
     - [Very Easy](https://github.com/0xSickb0y/writeups/tree/en-us/HackTheBox/Very%20Easy)
         - [Appointment](https://github.com/0xSickb0y/writeups/tree/en-us/HackTheBox/Very%20Easy/Appointment)
+        - [Archetype](https://github.com/0xSickb0y/writeups/tree/en-us/HackTheBox/Very%20Easy/Archetype)
         - [Crocodile](https://github.com/0xSickb0y/writeups/tree/en-us/HackTheBox/Very%20Easy/Crocodile)
         - [Dancing](https://github.com/0xSickb0y/writeups/tree/en-us/HackTheBox/Very%20Easy/Dancing)
         - [Fawn](https://github.com/0xSickb0y/writeups/tree/en-us/HackTheBox/Very%20Easy/Fawn)
