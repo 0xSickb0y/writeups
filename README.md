@@ -2,6 +2,8 @@
 
 Collection of detailed write-ups and pentest reports for various challenges.
 
+<img width="1713" height="621" alt="writeups" src="https://github.com/user-attachments/assets/eb4684de-412c-4f94-9f75-529523ce2015" />
+
 Each write-up contains:
 
 * Detailed methodology
