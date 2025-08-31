@@ -91,6 +91,9 @@ session_start();
 
 <img width="1410" height="559" alt="3" src="https://github.com/user-attachments/assets/76451c03-d977-4d66-8cb9-f24abaa82067" />
 
+<br>
+<br>
+
 Accessing the dashboard, I could interact with the application by using the `?search=` option. This allowed me to search for values like _Name, Type, Fuel, and Engine_ in a database of cars.
 
 <img width="1547" height="345" alt="4" src="https://github.com/user-attachments/assets/12cabd2d-3df0-4098-a08b-805b76c5a867" />
