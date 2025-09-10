@@ -26,6 +26,7 @@ Each write-up contains:
         - [Responder](https://github.com/0xSickb0y/writeups/tree/en-us/HackTheBox/Very%20Easy/Responder)
         - [Sequel](https://github.com/0xSickb0y/writeups/tree/en-us/HackTheBox/Very%20Easy/Sequel)
         - [Three](https://github.com/0xSickb0y/writeups/tree/en-us/HackTheBox/Very%20Easy/Three)
+        - [Unified](https://github.com/0xSickb0y/writeups/blob/en-us/HackTheBox/Very%20Easy/Unified/)
         - [Vaccine](https://github.com/0xSickb0y/writeups/tree/en-us/HackTheBox/Very%20Easy/Vaccine)
 
     - [Easy](https://github.com/0xSickb0y/writeups/tree/en-us/HackTheBox/Easy)
