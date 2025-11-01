@@ -30,6 +30,7 @@ Each write-up contains:
         - [Vaccine](https://github.com/0xSickb0y/writeups/tree/en-us/HackTheBox/Very%20Easy/Vaccine)
 
     - [Easy](https://github.com/0xSickb0y/writeups/tree/en-us/HackTheBox/Easy)
+        - [Artificial](https://github.com/0xSickb0y/writeups/tree/en-us/HackTheBox/Easy/Artificial) 
         - [Planning](https://github.com/0xSickb0y/writeups/tree/en-us/HackTheBox/Easy/Planning)
         - [UnderPass](https://github.com/0xSickb0y/writeups/tree/en-us/HackTheBox/Easy/UnderPass)
 
