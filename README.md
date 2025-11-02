@@ -6,35 +6,38 @@ Collection of detailed write-ups and pentest reports for various challenges.
 
 Each write-up contains:
 
-* Detailed methodology
-* Technical findings
-* Step-by-step solution
-* References and tools used
+- Detailed methodology
+- Technical findings
+- Step-by-step solution
+- References and tools used
 
 ## Table of Contents
 
-- [HackTheBox](https://github.com/0xSickb0y/writeups/tree/en-us/HackTheBox)
- 
-    - [Easy](https://github.com/0xSickb0y/writeups/tree/en-us/HackTheBox/Easy)
-        - [Artificial](https://github.com/0xSickb0y/writeups/tree/en-us/HackTheBox/Easy/Artificial) 
-        - [Planning](https://github.com/0xSickb0y/writeups/tree/en-us/HackTheBox/Easy/Planning)
-        - [UnderPass](https://github.com/0xSickb0y/writeups/tree/en-us/HackTheBox/Easy/UnderPass)
-    - [Very Easy](https://github.com/0xSickb0y/writeups/tree/en-us/HackTheBox/Very%20Easy)
+- [HackTheBox](https://github.com/0xSickb0y/writeups/tree/en-us/HackTheBox/)
 
-        - [Appointment](https://github.com/0xSickb0y/writeups/tree/en-us/HackTheBox/Very%20Easy/Appointment)
-        - [Archetype](https://github.com/0xSickb0y/writeups/tree/en-us/HackTheBox/Very%20Easy/Archetype)
-        - [Crocodile](https://github.com/0xSickb0y/writeups/tree/en-us/HackTheBox/Very%20Easy/Crocodile)
-        - [Dancing](https://github.com/0xSickb0y/writeups/tree/en-us/HackTheBox/Very%20Easy/Dancing)
-        - [Fawn](https://github.com/0xSickb0y/writeups/tree/en-us/HackTheBox/Very%20Easy/Fawn)
-        - [Meow](https://github.com/0xSickb0y/writeups/tree/en-us/HackTheBox/Very%20Easy/Meow)
-        - [Oopsie](https://github.com/0xSickb0y/writeups/tree/en-us/HackTheBox/Very%20Easy/Oopsie)
-        - [Redeemer](https://github.com/0xSickb0y/writeups/tree/en-us/HackTheBox/Very%20Easy/Redeemer)
-        - [Responder](https://github.com/0xSickb0y/writeups/tree/en-us/HackTheBox/Very%20Easy/Responder)
-        - [Sequel](https://github.com/0xSickb0y/writeups/tree/en-us/HackTheBox/Very%20Easy/Sequel)
-        - [Three](https://github.com/0xSickb0y/writeups/tree/en-us/HackTheBox/Very%20Easy/Three)
-        - [Unified](https://github.com/0xSickb0y/writeups/blob/en-us/HackTheBox/Very%20Easy/Unified/)
-        - [Vaccine](https://github.com/0xSickb0y/writeups/tree/en-us/HackTheBox/Very%20Easy/Vaccine)
+  - [Machines](https://github.com/0xSickb0y/writeups/tree/en-us/HackTheBox/Machines)
 
+    - [Appointment](https://github.com/0xSickb0y/writeups/tree/en-us/HackTheBox/Machines/Appointment/README.md)
+    - [Archetype](https://github.com/0xSickb0y/writeups/tree/en-us/HackTheBox/Machines/Archetype/README.md)
+    - [Artificial](https://github.com/0xSickb0y/writeups/tree/en-us/HackTheBox/Machines/Artificial/README.md)
+    - [Crocodile](https://github.com/0xSickb0y/writeups/tree/en-us/HackTheBox/Machines/Crocodile/README.md)
+    - [Dancing](https://github.com/0xSickb0y/writeups/tree/en-us/HackTheBox/Machines/Dancing/README.md)
+    - [Fawn](https://github.com/0xSickb0y/writeups/tree/en-us/HackTheBox/Machines/Fawn/README.md)
+    - [Meow](https://github.com/0xSickb0y/writeups/tree/en-us/HackTheBox/Machines/Meow/README.md)
+    - [Oopsie](https://github.com/0xSickb0y/writeups/tree/en-us/HackTheBox/Machines/Oopsie/README.md)
+    - [Planning](https://github.com/0xSickb0y/writeups/tree/en-us/HackTheBox/Machines/Planning/README.md)
+    - [Redeemer](https://github.com/0xSickb0y/writeups/tree/en-us/HackTheBox/Machines/Redeemer/README.md)
+    - [Responder](https://github.com/0xSickb0y/writeups/tree/en-us/HackTheBox/Machines/Responder/README.md)
+    - [Sequel](https://github.com/0xSickb0y/writeups/tree/en-us/HackTheBox/Machines/Sequel/README.md)
+    - [Three](https://github.com/0xSickb0y/writeups/tree/en-us/HackTheBox/Machines/Three/README.md)
+    - [UnderPass](https://github.com/0xSickb0y/writeups/tree/en-us/HackTheBox/Machines/UnderPass/README.md)
+    - [Unified](https://github.com/0xSickb0y/writeups/tree/en-us/HackTheBox/Machines/Unified/README.md)
+    - [Vaccine](https://github.com/0xSickb0y/writeups/tree/en-us/HackTheBox/Machines/Vaccine/README.md)
+  
+  - [Sherlocks](https://github.com/0xSickb0y/writeups/tree/en-us/HackTheBox/Sherlocks)
+
+    - [Brutus](https://github.com/0xSickb0y/writeups/tree/en-us/HackTheBox/Sherlocks/Brutus/README.md)
 
 - [TryHackMe](https://github.com/0xSickb0y/writeups/tree/en-us/TryHackMe)
-    - [Windcorp](https://github.com/0xSickb0y/writeups/tree/en-us/TryHackMe/windcorp)
+
+  - [windcorp](https://github.com/0xSickb0y/writeups/tree/en-us/TryHackMe/windcorp)
