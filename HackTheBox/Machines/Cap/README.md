@@ -9,7 +9,6 @@
 * [About](#about)
 * [References](#references)
 * [Reconnaissance](#reconnaissance)
-* [Security Dashboard](#security-dashboard)
 * [IDOR](#idor)
 * [SSH Access](#ssh-access)
 * [Privilege Escalation](#privilege-escalation)
