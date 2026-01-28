@@ -21,6 +21,7 @@ Each write-up contains:
     - [Archetype](https://github.com/0xSickb0y/writeups/tree/main/HackTheBox/Machines/Archetype/README.md)
     - [Artificial](https://github.com/0xSickb0y/writeups/tree/main/HackTheBox/Machines/Artificial/README.md)
     - [Cap](https://github.com/0xSickb0y/writeups/tree/main/HackTheBox/Machines/Cap/README.md)
+    - [Conversor](https://github.com/0xSickb0y/writeups/tree/main/HackTheBox/Machines/Conversor)
     - [Crocodile](https://github.com/0xSickb0y/writeups/tree/main/HackTheBox/Machines/Crocodile/README.md)
     - [Dancing](https://github.com/0xSickb0y/writeups/tree/main/HackTheBox/Machines/Dancing/README.md)
     - [Expressway](https://github.com/0xSickb0y/writeups/tree/main/HackTheBox/Machines/Expressway)
