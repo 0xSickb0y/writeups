@@ -134,13 +134,7 @@ fismathack:5b5c3ac3a1c897c94caad48e6c71fdec
 
 <img width="1907" height="483" alt="8" src="https://github.com/user-attachments/assets/4af94322-93ad-42ca-b979-db07e33fb848" />
 
-The MD5 hash was quickly cracked using the _rockyou.txt_ wordlist with hashcat, revealing the plaintext password: `Keepmesafeandwarm`.
-
-SSH access was then obtained using these credentials:
-
-```bash
-ssh fismathack@conversor.htb
-```
+The MD5 hash was quickly cracked using the _rockyou.txt_ wordlist with hashcat, revealing the plaintext password: `Keepmesafeandwarm`. SSH access was then obtained using these credentials.
 
 ## Privilege Escalation
 
