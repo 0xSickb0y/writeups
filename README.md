@@ -23,6 +23,7 @@ Each write-up contains:
     - [Cap](https://github.com/0xSickb0y/writeups/tree/main/HackTheBox/Machines/Cap/README.md)
     - [Crocodile](https://github.com/0xSickb0y/writeups/tree/main/HackTheBox/Machines/Crocodile/README.md)
     - [Dancing](https://github.com/0xSickb0y/writeups/tree/main/HackTheBox/Machines/Dancing/README.md)
+    - [Expressway](https://github.com/0xSickb0y/writeups/tree/main/HackTheBox/Machines/Expressway)
     - [Fawn](https://github.com/0xSickb0y/writeups/tree/main/HackTheBox/Machines/Fawn/README.md)
     - [Meow](https://github.com/0xSickb0y/writeups/tree/main/HackTheBox/Machines/Meow/README.md)
     - [Oopsie](https://github.com/0xSickb0y/writeups/tree/main/HackTheBox/Machines/Oopsie/README.md)
