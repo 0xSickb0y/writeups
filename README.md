@@ -24,6 +24,7 @@ Each write-up contains:
     - [Conversor](https://github.com/0xSickb0y/writeups/tree/main/HackTheBox/Machines/Conversor/README.md)
     - [Crocodile](https://github.com/0xSickb0y/writeups/tree/main/HackTheBox/Machines/Crocodile/README.md)
     - [Dancing](https://github.com/0xSickb0y/writeups/tree/main/HackTheBox/Machines/Dancing/README.md)
+    - [Eighteen](https://github.com/0xSickb0y/writeups/tree/main/HackTheBox/Machines/Eighteen)
     - [Expressway](https://github.com/0xSickb0y/writeups/tree/main/HackTheBox/Machines/Expressway)
     - [Fawn](https://github.com/0xSickb0y/writeups/tree/main/HackTheBox/Machines/Fawn/README.md)
     - [Meow](https://github.com/0xSickb0y/writeups/tree/main/HackTheBox/Machines/Meow/README.md)
