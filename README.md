@@ -33,6 +33,7 @@ Each write-up contains:
     - [Meow](https://github.com/0xSickb0y/writeups/tree/main/HackTheBox/Machines/Meow/)
     - [Oopsie](https://github.com/0xSickb0y/writeups/tree/main/HackTheBox/Machines/Oopsie/)
     - [Planning](https://github.com/0xSickb0y/writeups/tree/main/HackTheBox/Machines/Planning/)
+    - [Reactor](https://github.com/0xSickb0y/writeups/tree/main/HackTheBox/Machines/Reactor/)
     - [Redeemer](https://github.com/0xSickb0y/writeups/tree/main/HackTheBox/Machines/Redeemer/)
     - [Responder](https://github.com/0xSickb0y/writeups/tree/main/HackTheBox/Machines/Responder/)
     - [Sequel](https://github.com/0xSickb0y/writeups/tree/main/HackTheBox/Machines/Sequel/)
